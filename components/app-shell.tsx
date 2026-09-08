@@ -69,6 +69,19 @@ export function AppShell({ children }: { children: ReactNode }) {
               appointments scheduled
             </p>
           </div>
+
+          <a
+            href="mailto:noveltratechnologies@gmail.com"
+            className="mt-3 rounded-2xl border border-emerald-400/30 bg-emerald-400/10 p-4 transition hover:bg-emerald-400/15"
+          >
+            <p className="text-xs uppercase tracking-[0.2em] text-emerald-300">
+              Need help?
+            </p>
+            <p className="mt-2 font-semibold text-white">Contact Us</p>
+            <p className="mt-1 break-all text-xs text-slate-300">
+              noveltratechnologies@gmail.com
+            </p>
+          </a>
         </aside>
 
         <div className="flex min-w-0 flex-1 flex-col">
@@ -95,6 +108,12 @@ export function AppShell({ children }: { children: ReactNode }) {
                 );
               })}
             </div>
+            <a
+              href="mailto:noveltratechnologies@gmail.com"
+              className="mt-2 block rounded-2xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm font-semibold text-emerald-800"
+            >
+              Contact Us
+            </a>
           </div>
 
           <main className="flex-1">{children}</main>
