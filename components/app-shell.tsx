@@ -6,6 +6,7 @@ import type { ReactNode } from "react";
 
 const navItems = [
   { label: "Dashboard", href: "/" },
+  { label: "Contact Us", href: "/contact" },
   { label: "Appointments", href: "/appointments" },
   { label: "Clients", href: "/clients" },
   { label: "Pets", href: "/pets" },
@@ -15,7 +16,6 @@ const navItems = [
   { label: "Invoices", href: "/invoices" },
   { label: "Reports", href: "/reports" },
   { label: "Settings", href: "/settings" },
-  { label: "Contact Us", href: "/contact" },
 ];
 
 export function AppShell({ children }: { children: ReactNode }) {
