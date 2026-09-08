@@ -6,7 +6,6 @@ import type { ReactNode } from "react";
 
 const navItems = [
   { label: "Dashboard", href: "/" },
-  { label: "Contact Us", href: "/contact" },
   { label: "Appointments", href: "/appointments" },
   { label: "Clients", href: "/clients" },
   { label: "Pets", href: "/pets" },
@@ -72,7 +71,7 @@ export function AppShell({ children }: { children: ReactNode }) {
           </div>
         </aside>
 
-        <div className="flex-1">
+        <div className="flex min-w-0 flex-1 flex-col">
           <div className="mb-4 lg:hidden">
             <div className="flex gap-2 overflow-x-auto rounded-2xl border border-slate-200 bg-white p-2 shadow-sm">
               {navItems.map((item) => {
@@ -98,7 +97,17 @@ export function AppShell({ children }: { children: ReactNode }) {
             </div>
           </div>
 
-          <main>{children}</main>
+          <main className="flex-1">{children}</main>
+
+          <footer className="mt-6 flex flex-col gap-1 border-t border-slate-200 px-1 py-4 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-end sm:gap-2">
+            <span>Contact Us</span>
+            <a
+              href="mailto:noveltratechnologies@gmail.com"
+              className="font-medium text-emerald-700 hover:text-emerald-800"
+            >
+              noveltratechnologies@gmail.com
+            </a>
+          </footer>
         </div>
       </div>
     </div>
