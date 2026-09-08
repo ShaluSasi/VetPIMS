@@ -15,6 +15,7 @@ const navItems = [
   { label: "Invoices", href: "/invoices" },
   { label: "Reports", href: "/reports" },
   { label: "Settings", href: "/settings" },
+  { label: "Contact Us", href: "/contact" },
 ];
 
 export function AppShell({ children }: { children: ReactNode }) {
