@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   title: "VETPIMS | Veterinary Practice Management",
   description:
     "Veterinary practice dashboard for appointments, consultations, inventory, and billing.",
+  other: {
+    "volgachat-verification": "volgachat-verify-x43rxn3gezjw7c3uqep6",
+  },
 };
 
 export default function RootLayout({
