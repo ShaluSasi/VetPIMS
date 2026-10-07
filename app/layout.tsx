@@ -32,6 +32,11 @@ export default function RootLayout({
     >
       <body className="min-h-full bg-slate-100 text-slate-900">
         <AppShell>{children}</AppShell>
+        <script
+          src="https://volgachat.com/v1/widget.js"
+          data-bot-id="qayyjumef6zp"
+          defer
+        />
       </body>
     </html>
   );
