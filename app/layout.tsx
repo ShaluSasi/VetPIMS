@@ -17,9 +17,6 @@ export const metadata: Metadata = {
   title: "VETPIMS | Veterinary Practice Management",
   description:
     "Veterinary practice dashboard for appointments, consultations, inventory, and billing.",
-  other: {
-    "volgachat-verification": "volgachat-verify-x43rxn3gezjw7c3uqep6",
-  },
 };
 
 export default function RootLayout({
@@ -32,11 +29,6 @@ export default function RootLayout({
     >
       <body className="min-h-full bg-slate-100 text-slate-900">
         <AppShell>{children}</AppShell>
-        <script
-          src="https://volgachat.com/v1/widget.js"
-          data-bot-id="qayyjumef6zp"
-          defer
-        />
       </body>
     </html>
   );
