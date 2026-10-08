@@ -31,7 +31,7 @@ export default function RootLayout({
         <AppShell>{children}</AppShell>
         <script
           src="https://volgachat.com/v1/widget.js"
-          data-bot-id="hvuu8zxbkmqaa"
+          data-bot-id="hvuu8zxbkmqa"
           defer
         />
       </body>
